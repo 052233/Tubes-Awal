@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Gaya CSS untuk card */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      margin: 20px;
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+  <title>Card Simple</title>
+</head>
+<body>
+  <!-- Card -->
+  <div class="card">
+    <img src="https://placekitten.com/300/200" alt="Kitten Image">
+    <h2 class="card-title">Card Title</h2>
+  </div>
+</body>
+</html>
