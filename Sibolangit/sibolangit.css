@@ -34,14 +34,29 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('IMG/1.jpg');
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('IMG/2.jpg');
     background-size: cover;
     background-position: bottom center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-nav {
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.home-text {
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+}
+nav { 
     z-index: 100;
     color: #fff;
     text-align: center;
@@ -62,13 +77,13 @@ nav {
   }
   nav .logo img {
     vertical-align: middle;
-    width: 120px;
+    width: 60px;
   }
   
   nav .menu {
     float: right;
     height: 60px;
-    max-width: 600px;
+    max-width: 800px;
   }
   
   nav .menu ul {
@@ -106,21 +121,16 @@ nav {
   nav .logo img.hitam {
     display: none;
   }
-.home-text h1 {
-    font-size: var(--h1-font);
-    font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    align-items: center;
-}
-
-.home-text {
-    width: 100%;
-    display:flex ;
-    justify-content: center;
-}
-
+  nav ul li img {
+    width: 25px;
+    vertical-align: middle;
+  }
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  .img {
+    height:2rem;width:2rem
+  }
 .home-text p {
     font-size: var(--p-font);
     font-weight: 500;
@@ -217,7 +227,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     align-items: center;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .activities-content .row{
@@ -348,7 +358,7 @@ nav {
 .center-text h2 {
     font-size: var(--h2-font);
     font-weight: 600;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 1700px) {
@@ -413,4 +423,84 @@ nav {
         padding: 60px 3% 50px;
     }
 }
-
+.tiket {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin-top: 100px;
+}
+.tiket a button {
+    background-color: rgb(100, 224, 100);
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tiket button  {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: x-large;
+}
+.tiket a button:hover  {
+    background-color: lightgreen;
+}
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+  }
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #333;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+  }

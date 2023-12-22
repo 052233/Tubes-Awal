@@ -1,4 +1,4 @@
-//menu
+///menu
 var tombolMenu = $(".tombol-menu");
 var menu = $("nav .menu ul");
 

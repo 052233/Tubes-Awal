@@ -12,6 +12,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.error{
+    color: red;
+}
 .container1 {
     position: absolute;
     left: 50%;
@@ -28,12 +31,13 @@ label {
     width: 100px;
 }
 input {
+    margin: 10px;
     width: 100px;
     height: 10px;
     border: 1px solid #111010;
     border-radius: 5px;
     padding: 5px;
-    fill: #111010;
+    background-color: white;
 }
 textarea {
     width: 200px ;

@@ -1,0 +1,53 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+} */
+
+.rating {
+    text-align: center;
+    margin: 15px;
+}
+.rating {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ccc;
+}
+
+.star:hover,
+.star.active {
+    color: #ffcc00;
+}
+
+button {
+    margin-top: 10px;
+  }
+
+.ras{
+    font-family:sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    background: #006400;
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3;
+    transition-duration: 0.3;
+    -webkit-transition-property: box-shadow, transform;
+
+}
+
+.ras:hover, .ras:focus, .ras:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

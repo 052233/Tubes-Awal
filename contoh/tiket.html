@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Tiket</title>
+  <link rel="stylesheet" href="tiket.css">
+</head>
+<body>
+  <button onclick="showPopup()">Pemesanan</button>
+
+  <div id="popup" class="overlay">
+    <div class="popup">
+      <h2>Terima Kasih!</h2>
+      <p>Pesanan Anda Telah Diproses</p>
+      <button onclick="hidePopup()">Tutup</button>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+    
+    function hidePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

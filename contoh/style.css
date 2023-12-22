@@ -12,7 +12,8 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-}
+} 
+
 .layar-dalam {
   width: 1000px;
   margin: auto;
@@ -98,39 +99,54 @@ nav .logo {
 }
 nav .logo img {
   vertical-align: middle;
-  width: 120px;
+  width: 60px;
 }
 
 nav .menu {
   float: right;
   height: 60px;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 nav .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: block;
 }
 
 nav .menu ul li {
   list-style-type: none;
   float: left;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 nav ul li a {
   color: #fff;
   text-align: center;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 9px 0px 9px;
   text-decoration: none;
+  font-size: 16px;
 }
-
+nav ul li img {
+  width: 25px;
+  vertical-align: middle;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.img {
+  height:2rem;width:2rem
+}
 nav ul li a:hover {
   text-decoration: underline;
 }
-
+.vertical-line {
+  border-left: 1px  black; /* Warna dan ketebalan garis dapat disesuaikan */
+  height: 68px; /* Sesuaikan tinggi garis sesuai kebutuhan */
+  margin-left: 20px; /* Jarak antara teks dan garis */
+  margin-right: 20px; /* Jarak antara garis dan elemen sekitarnya */
+}
 /* pengaturan header */
 header {
   position: relative;
@@ -290,11 +306,7 @@ section.quote {
   font-style: italic;
   padding: 100px;
 }
-section.quote .layar-dalam p {
-  display: inline;
-  background: url("asset/quote-icon.png") no-repeat;
-  padding: 40px;
-}
+
 .tim img {
   width: 100%;
   box-shadow: 0px -10px 30px #ccc;
@@ -432,5 +444,8 @@ footer .layar-dalam .copyright {
   .support div {
     width: 100%;
     padding-bottom: 30px;
+  }
+  .user{
+    color: lightblue;
   }
 }

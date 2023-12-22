@@ -10,18 +10,22 @@
     <!-- <h1>Medan</h1> -->
     <div class="container1">
         <h1>Pesan Tiket</h1>
-    <form action="" class="">
+    <form action="pesan.php" method="post" class="">
 
         <fieldset>
             <legend>Data Diri :</legend>
             <label for="">Nama Lengkap</label>
-            :<input type="text" id="myInput" class="dd"><br>
+            :<input type="text" id="myInput" name="nama" class="dd"><br>
             <label for="">Tanggal Berangkat</label>
-            :<input type="date" id="myInput" class="dd"><br>
-            <label for="">Tanggal Pulang</label>
-            :<input type="date" id="myInput" class="dd"><br>
-            <br>     <br>
-            <button type="submit">Pesan</button>
+            :<input type="date" id="myInput" name="tglpergi" class="dd"><br>
+            <!-- <label for="">Tanggal Pulang</label>
+            :<input type="date" id="myInput" name="tglpulang" class="dd"><br> -->
+            <br><br>
+
+        <div class="container">
+            <button type="submit" name="button" id="submit">Pesan</button>
+        </div>
+
         </fieldset>
     </form>
     </div>
